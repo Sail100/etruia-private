@@ -8055,7 +8055,7 @@ end)
 runLunar(function()
     local Notifier = {Enabled = false}
     local Duration = {Value = 10}
-    local Joins = {Enabled = false}
+    local Joins = {Enabled = true}
     local Leaves = {Enabled = false}
     local Spawns = {Enabled = false}
     Notifier = GuiLibrary.ObjectsThatCanBeSaved['WorldWindow'].Api.CreateOptionsButton({
@@ -8073,11 +8073,6 @@ runLunar(function()
                         InfoNotification("PlayerNotifer", plr.Name.. " has left.", Duration.Value)    
                   end)
                 end
-                if Spawns.Enabled == true then
-                    playersService.CharacterAdded:Connect(function(plr)  
-                        InfoNotification("PlayerNotifer", plr.Name.. " has spawned.", Duration.Value)
-                 end)
-               end
              end
          end
     })
@@ -8094,11 +8089,6 @@ runLunar(function()
         HoverText = "Notify when player joins",
         Function = function() end,
     }) 
-    Spawns = Notifier.CreateToggle({
-        Name = "Player Spawn",
-        HoverText = "Notify when player spawns",
-        Function = function() end,
-    })
      Leaves = Notifier.CreateToggle({
         Name = "Leave", 
         HoverText = "Notify when player leaves",
