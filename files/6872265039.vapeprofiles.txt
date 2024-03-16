@@ -1,1 +1,0 @@
-{"Render Green":{"Keybind":""},"default":{"Selected":true,"Keybind":""},"Render Blurple":{"Keybind":""},"Render Pink":{"Keybind":""},"Render Rainbow":{"Keybind":""},"Render Red":{"Keybind":""},"Render Cum":{"Keybind":""}}
